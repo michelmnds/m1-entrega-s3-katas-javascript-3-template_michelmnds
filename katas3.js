@@ -20,16 +20,16 @@ console.log(retorno1)
 
 
 //EX 3
-function stringTripletGroup(frase){
+function stringTripletGroup(lista){
     let retorno = [];
     let tresLetras = "";
     
-    for (let i = 0; i < frase.length; i++){
+    for (let i = 0; i < lista.length; i++){
         if (tresLetras.length == 3){
             retorno.push(tresLetras);
             tresLetras = "";
         }
-        tresLetras += frase[i]
+        tresLetras += lista[i]
     }
     return retorno;
 }
